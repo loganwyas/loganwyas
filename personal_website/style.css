@@ -1,0 +1,228 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    background-color: #33393D;
+    color: white;
+    padding: 10px 15px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-right: 10px;
+}
+
+header a {
+    display: table-cell;
+    line-height: 15px;
+}
+
+header a, footer a {
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+header a:hover, footer a:hover {
+    color: #2AABE4;
+}
+
+.home_link a {
+    font-size: 14px;
+    padding-right: 7px;
+}
+
+.header_links a {
+    padding-right: 10px;
+}
+
+#date_text {
+    font-size: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 15px;
+    float: right;
+    padding-right: 20px;
+    padding-top: 2px;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+section {
+    padding: 20px;
+}
+
+.hero {
+    background-color: #2AABE4;
+    height: 300px;
+    padding-top: 55px;
+}
+
+.hero img {
+    border-radius: 50%;
+    width: 200px;
+}
+
+.squared-images {
+    margin: 30px;
+    grid-template-columns: auto auto;
+}
+
+.squared-images img {
+    width: 200px;
+    height: 200px;
+}
+
+#about-me {
+    background-color: #ececec;
+}
+
+.grid-image img {
+    width: 350px;
+}
+
+.tech-grid {
+    grid-template-columns: 350px 1fr;
+    gap: 15px;
+}
+
+.scouts-grid {
+    grid-template-columns: 1fr 450px;
+    gap: 15px;
+}
+
+#about-me div {
+    display: grid;
+    align-self: start;
+}
+
+#skills {
+    background-color: #ffffff;
+}
+
+#skills div {
+    display: grid;
+}
+
+#skills .grid-align{
+    grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
+    justify-items: center;
+}
+
+#skills h2 {
+    margin-top: 30px;
+}
+
+#skills img {
+    width: 100px;
+    padding: 10px;
+}
+
+#skills .img_text {
+    position: relative;
+    visibility: hidden;
+}
+
+#python_image:hover .img_text, #html_image:hover .img_text, #css_image:hover .img_text {
+    visibility: visible;
+}
+
+#academics {
+    background-color: #ececec;
+    padding: 20px 10px;
+}
+
+#academics i {
+    font-size: 50px;
+    color: #2AABE4;
+    text-align: center;
+}
+
+#academics div {
+    display: grid;
+    align-self: start;
+}
+
+#academics .grid-align {
+    grid-template-columns: 4fr 2fr 3fr 2fr;
+}
+
+#academics p {
+    margin: 0;
+}
+
+#academics ul {
+    list-style-type: none;
+}
+
+#academics li {
+    padding: 5px 0px;
+}
+
+#contact-me {
+    background-color: #ffffff;
+}
+
+#contact-me a {
+    color: #2AABE4;
+}
+
+#contact-me i {
+    color: #2AABE4;
+    font-size: 90px;
+    padding: 20px;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+.container {
+    width: 100%;
+}
+}
+
+.text-center {
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid;
+    padding: 10px
+}
+
+.center-list {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+footer {
+    padding: 8px 15px;
+    background-color: #9DC8E4;
+}
+
+.footer_links {
+    float: right;
+    margin-right: 10px;
+}
+
+.footer_links a {
+    margin: 0px 5px;
+}
+
+button {
+    font-size: 20px;
+}

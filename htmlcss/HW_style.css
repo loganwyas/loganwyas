@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    background-color: #b8f3ff;
+    padding: 10px 15px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.title {
+    margin-left: 80px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 970px;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+@media screen and (max-width: 600px) {
+.container {
+    width: 100%;
+}
+.layout {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+}
+.text-center {
+    text-align: center;
+}
+
+.image-center {
+    margin: 0 auto;
+    display: block;
+}
+
+.person-layout {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+
+.superheroes {
+    background-color: #ff768b;
+}
+
+#quill {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.hanks {
+    background-color: #03a858;
+}
+
+#hanks-layout {
+    grid-template-columns: 1fr 1fr;
+}
+
+#gump {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.profile-traits {
+    display: table;
+    margin: auto;
+    font-size: 20px;
+    padding: 10px 10px 30px 10px;
+    text-align: left;
+}
+
+.profile-traits li {
+    font-size: 18px;
+}
+
+.link_sheet {
+    background-color: #efefef;
+}
+
+.headfootlinks {
+    float: right;
+}
+
+footer {
+    padding: 7.5px 15px;
+    background-color: #b8f3ff;
+}
+
+.profile {
+    margin: 40px 10px;
+}
+
+.picture {
+    width: 250px;
+}
+
+.img-circle {
+    border: 10px dashed orange;
+    padding: 5px;
+    border-radius: 50%;
+    
+}
+
+.featured {
+    font-style: italic;
+}
+
+.office-people {
+    background-color: #b1b0ff;
+}
+
+section {
+    padding: 20px
+}
+
+label {
+    display: block;
+}
+
+.btn {
+    background-color: #03a858;
+    color: #ffffff;
+    border: 1px solid gray;
+    border-radius: 15px;
+    padding: 5px 10px;
+    text-transform: uppercase;
+}
+.social-media-icons {
+    width: 50px;
+}

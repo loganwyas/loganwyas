@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+}
+header{
+    background-color: gray;
+    padding: 10px 20px;
+}
+.logo{
+    width: 45px;
+}
+.name{
+    margin-left: 5px;
+    text-transform: uppercase;
+}
+.header-links {
+    /* text-align: right;
+    margin-right: 0; */
+    float: right;
+}
+.intro{
+    background-color: rebeccapurple;
+}
+footer{
+    padding: 10px 20px;
+    background-color: gray;
+    text-align: center;
+}
+.person-container{
+    border:1px solid red;
+    width:350px;
+    padding: 10px 5px;
+    background-color:orange;
+    /* padding: 10px 5px 10px 5px; */
+    /* padding-left:5px;
+    padding-right:5px;
+    padding-top:10px;
+    padding-bottom: 10px; */
+}
+.person-container h1{
+    font-weight: bold;
+    color: pink;
+}
+.person-image{
+    width: 150px;
+    margin: 0 auto;
+    display: block;
+}
+.purple{
+    color: purple;
+}
+h1{
+    color:green;
+}
+div{
+    background-color: red;
+}
