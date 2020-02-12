@@ -178,13 +178,26 @@ function createAcademics() {
         }
     }
     element.appendChild(ul);
-    for (i=0; i < clubs.length; i++) {
-        let club = clubs[i];
+    // for (i=0; i < clubs.length; i++) {
+    //     let club = clubs[i];
+    //     var li = document.createElement("li");
+    //     li.innerHTML = club.name
+    //     var element = document.getElementById("clubs");
+    //     element.appendChild(li);
+    //
+    function createElements(element) {
         var li = document.createElement("li");
-        li.innerHTML = club.name
+        li.innerHTML = element.name;
         var element = document.getElementById("clubs");
         element.appendChild(li);
     }
+    clubs.forEach(function(element) {
+        var li = document.createElement("li");
+        li.innerHTML = element.name;
+        var element = document.getElementById("clubs");
+        element.appendChild(li);
+    });
+    
     for (i=0; i < gpas.length; i++) {
         let gpa = gpas[i];
         var li = document.createElement("li");
@@ -192,4 +205,25 @@ function createAcademics() {
         var element = document.getElementById("gpa");
         element.appendChild(li);
     }
+}
+
+function returnWeather() {
+    const search = document.getElementById('search');
+    const url = "http://api.openweathermap.org/data/2.5/weather"
+    let queryParams = "?q=" + search.value;
+    const apiKey = "&APPID=0d8007455d7c7901d0d9dee49ca81350"
+    let endpoint = url + queryParams + apiKey;
+    fetch(endpoint).then((response) => {
+        if (response.ok) {
+          return response.json();
+        }
+        throw new Error('Request failed!');
+      }, (networkError) => {
+        console.log(networkError.message)
+      }).then((jsonResponse) => {
+        console.log(jsonResponse);
+        let kel = +jsonResponse.main.temp
+        let fahrenheit = (kel - 273.15) * 9/5 + 32
+        alert(`The temperature in ${search.value} is: ${fahrenheit}`);
+      })
 }

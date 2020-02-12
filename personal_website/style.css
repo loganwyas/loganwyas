@@ -29,6 +29,17 @@ header a:hover, footer a:hover {
     color: #2AABE4;
 }
 
+#weather form {
+    display: table-cell;
+}
+
+#weather button {
+    width: 70px;
+    height: 25px;
+    font-size: 15px;
+    padding: 0px;
+}
+
 .home_link a {
     font-size: 14px;
     padding-right: 7px;

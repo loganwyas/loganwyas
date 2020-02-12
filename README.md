@@ -66,8 +66,15 @@ Extras:
     5. If number is not divisible by any, print the number
 - Figure out how Array.filter prototype method works
 
-### Homwork, 1/22/20
+### Homework, 1/22/20
 - Create four arrays for each Academics section (arrays of objects)
     - Keep properties consistent
     - Add these elements to HTML
 - Work on Codecademny
+
+### Homework, 1/29/20
+- Look into fetch api stuff (get, put, post, delete)
+    - Try to add weather to website (openweathermap.org)
+
+### Homework, 2/5/20
+- Nodeschool.io
