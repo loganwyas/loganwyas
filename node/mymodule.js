@@ -1,27 +1,18 @@
 const fs = require('fs');
 const path = require('path');
-let read = fs.readdir(process.argv[2], function callback (err, data) {
-    if (err) {
-        return err;
-    }
-    extentions = [];
-    for (i = 0; i < data.length; i++) {
-        extention = path.extname(data[i]);
-        if (extentions != []) {
-            for (y = 0; y < extentions.length; y++) {
-                for (x = 0; x < data.length; x++) {
-                    if (path.extname(data[x]) === extention) {
-                        
-                    }
-                }        
+module.exports = function (dir, filter, callback) {
+    fs.readdir(dir, function test(err, data) {
+        if (err) {
+            return callback(err);
+        }
+        var extension = "." + filter;
+        var fileList = [];
+        data.forEach((file) => {
+            if (extension === path.extname(file)) {
+                fileList.push(file);
             }
-        }
-        else {
-            extentions += extention;
-        }
-        
-        }
-    }
-);
+        });
 
-module.exports = read();
+        callback(null, fileList);
+    });
+}
