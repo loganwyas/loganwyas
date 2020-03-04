@@ -1,0 +1,45 @@
+<div class="two-across">
+  <section class="card">
+    <div class="card-content">
+      <span class="card-title">Time Clock</span>
+      <p>Hello, {{ name }}</p>
+      <p>
+        <strong>{{ message }}</strong>
+      </p>
+      <p>
+        Managers, don't forget to hold shift while clocking in!
+      </p>
+    </div>
+    <div class="card-action">
+      <button class="btn" (mousedown)="clockIn($event)" (mouseup)="updateList()">Clock In</button>
+      &nbsp;
+      <button class="btn" (mousedown)="clockOut()" (mouseup)="updateList()">Clock Out</button>
+    </div>
+  </section>
+
+  <section class="card">
+    <div class="card-content">
+      <span class="card-title">Upcoming Schedule</span>
+      <div class="time-block" (mouseleave)="clearSchedule()">
+        <div class="day-0" (mouseover)="showSchedule('M')" (click)="alerted('M')">M</div>
+        <div class="day-1" (mouseover)="showSchedule('T')" (click)="alerted('T')">T</div>
+        <div class="day-2" (mouseover)="showSchedule('W')" (click)="alerted('W')">W</div>
+        <div class="day-3" (mouseover)="showSchedule('R')" (click)="alerted('R')">R</div>
+        <div class="day-4" (mouseover)="showSchedule('F')" (click)="alerted('F')">F</div>
+      </div>
+      <div>
+        {{ currentSchedule }}
+      </div>
+    </div>
+  </section>
+  <strong>If you are not the person listed above, select your name from the dropdown.</strong>
+  <select id="person" (mouseup)="changeName()">
+      <option value="john">John Doe</option>
+      <option value="jane">Jane Doe</option>
+      <option value="bill">Bill Lumbergh</option>
+      <option value="sandy">Sandy Silverson</option>
+  </select>
+  <div id="clocked">
+    <h3>Clocked In</h3>
+  </div>
+</div>

@@ -82,3 +82,6 @@ Extras:
 ### Homework, 2/12/20
 - Add additional properties to app.component.ts and display them
 - More node stuff
+
+### Homework, 2/26/20
+- Play around with the events on Angular
