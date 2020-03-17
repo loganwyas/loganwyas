@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    top: 0;
+    width: 100%;
+}
+
+header {
+    background-color: #4a71e6;
+    top: 0;
+    width: 100%;
+    position: fixed;
+    padding: 10px;
+}
+
+h1 {
+    margin: 0;
+}
+
+.navigation {
+    margin: 0;
+    margin-top: 57px;
+    font-size: 30px;
+    background-color: #8daff7;
+}
+
+.navigation ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+}
+
+.navigation li {
+    padding: 20px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #002db3;
+}
+
+.active {
+    background-color: #6f8eb4;
+}
+
+.container {
+    padding: 20px;
+    font-size: 30px;
+}
+
+.container input {
+    height: 20px;
+    vertical-align: middle;
+}
+
+.text-center {
+    text-align: center;
+}

@@ -16,7 +16,7 @@ export class AppComponent {
   clockIn(event: MouseEvent) {
     var inList = false;
     if (event.shiftKey) {
-      this.message = 'Clocked in as manager!';
+      this.message = 'Clocked in as manager';
       this.type = "Manager";
     }
     else {
@@ -75,6 +75,7 @@ export class AppComponent {
   changeName() {
     var form = document.getElementById("person");
     this.name = form.options[form.selectedIndex].text;
+    this.message = 'Please Clock In'
   }
 
   updateList() {

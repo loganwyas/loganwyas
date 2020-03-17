@@ -19,12 +19,17 @@ const routes: Routes = [
     path: 'payroll',
     loadChildren: () =>
       import('./payroll/payroll.module').then(m => m.PayrollModule)
+  },
+  {
+    path: 'about',
+    loadChildren: () =>
+      import('./about/about.module').then(m => m.AboutModule)
   }
 ];
 
 const config: ExtraOptions = {
   useHash: true,
-  enableTracing: false, // Turn this on to log routing events to the console
+  enableTracing: true, // Turn this on to log routing events to the console
   scrollPositionRestoration: 'enabled'
   // ,preloadingStrategy: PreloadAllModules
 };

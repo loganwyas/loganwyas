@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 import { HrFilesSearchComponent } from './hr-files/hr-files-search.component';
 import { PayrollSearchComponent } from './payroll/payroll-search.component';
 import { SearchBoxComponent } from './search/search-box.component';
+import { AboutComponent } from './about/about-section.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SearchBoxComponent,
     HrFilesSearchComponent,
-    PayrollSearchComponent
+    PayrollSearchComponent,
+    AboutComponent
   ],
   imports: [BrowserModule],
   bootstrap: [AppComponent]
